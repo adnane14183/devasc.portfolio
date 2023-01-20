@@ -1,0 +1,1 @@
+docker run --rm -d -it --name apache8888 -p 8888:80 httpd
