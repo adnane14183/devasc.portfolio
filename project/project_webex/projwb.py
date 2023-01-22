@@ -1,7 +1,7 @@
 import xlrd  
 import json  
 
-wb = xlrd.open_workbook("project_webex/webex_groups.xlsx")
+wb = xlrd.open_workbook("/home/devasc/labs/devnet-src/project/project_webex/webex_groups.xlsx")
 sheet = wb.sheet_by_index(0)  
 member_dict = {}
 member_dict["group"] = sheet.cell_value(1, 0)

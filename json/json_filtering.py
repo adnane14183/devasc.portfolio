@@ -57,19 +57,17 @@ print(servers_struc.keys())
 print('------3A---------')
 print(servers_struc["rack"][0].keys())
 print('------3B---------')
-print(servers_struc["rack"][0]["server"]["server_name"] + "===" + servers_struc["rack"][0]["server"]["ip-address"])
+print(servers_struc["rack"][0]["server"]["ip-address"])
 print('------3C---------')
-print(servers_struc["rack"][2]["server"]["services"][0].keys())
-
-
-
-
-
+print(servers_struc["rack"][-1]["server"]["services"][1]["port"])
 
 print('------3D---------')
 for s in servers_struc["rack"]:
     print (s["server"]["server_name"] + " | " + s["server"]["ip-address"])
-
+    
+print('------3E---------')
+for s in (servers_struc["rack"][-1]["server"]["services"]):
+    print (s["port"])
 
 
 

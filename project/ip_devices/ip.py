@@ -78,7 +78,7 @@ def attach_interfaces_to_devices(dev_name, inventory):
 
 
 def main(): 
-    inventory_list = find_all_device_interfaces("ip_devices/ipdevices.xlsx")
+    inventory_list = find_all_device_interfaces("/home/devasc/labs/devnet-src/project/ip_devices/ipdevices.xlsx")
     device_list    = make_list_of_devices_and_roles(inventory_list)      
     for device_rec in device_list:  
         intf_list  = attach_interfaces_to_devices(device_rec["dev_name"], inventory_list)
